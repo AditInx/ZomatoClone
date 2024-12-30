@@ -1,0 +1,169 @@
+/* Navbar */
+.navbar-brand img {
+  width: 140px;
+}
+
+/* Search Form */
+.search-form input {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Location Button */
+.dropdown button {
+  white-space: nowrap;
+}
+
+/* Avatar Image */
+.dropdown img {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+
+/* Delivery Section */
+.delivery-section {
+  display: flex;
+  margin: 5rem auto;
+  align-items: center;
+  border-bottom: 2px solid #dc3545; /* Bootstrap danger color */
+}
+
+.delivery-section .bg-warning {
+  width: 70px;
+  height: 70px;
+  margin-left: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.delivery-section .text-danger {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+}
+
+
+/* Carousel */
+.carousel .rounded-circle {
+  transition: transform 0.3s ease;
+}
+
+.carousel .rounded-circle:hover {
+  cursor: pointer;
+}
+
+/* Carousel Buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: black !important;
+  height: 40px !important;
+  width: 40px !important;
+  margin-top: 70px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  align-items: center; /* Ensure proper alignment */
+  justify-content: center; /* Ensure proper alignment */
+  opacity: 1 !important; /* Make sure opacity stays 100% */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: #333 !important;
+  opacity: 0.8 !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.carousel .carousel-item img {
+  height: 180px;
+}
+
+.carousel .carousel-item p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+/* Cards Container */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Space between cards */
+}
+
+/* Individual Card */
+.card {
+  width: 100%; /* Default width is 100% of the container */
+  max-width: 350px; /* Max width to prevent oversized cards */
+  height: 350px; /* Fixed card height */
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add box-shadow on hover */
+  border: 1px solid #ccc; /* Optional: Add a subtle border on hover */
+  border-radius: 15px;
+}
+
+/* For extra large screens */
+@media (min-width: 1200px) {
+  .card {
+    width: 350px !important; /* Fixed width of 350px for large screens */
+    height: 350px !important; /* Fixed height */
+  }
+}
+
+/* For larger screens (tablets and small desktops) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .card {
+    width: calc(33.333% - 20px); /* 3 cards per row with spacing */
+    height: 350px; /* Fixed card height */
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 767px) {
+  .card {
+    width: 100%; /* 1 card per row */
+    height: 350px; /* Fixed height */
+  }
+}
+
+
+
+
+/* Increase font size of accordion header */
+.accordion-header .accordion-button {
+  font-size: 1.2rem; /* Adjust font size */
+  padding: 1rem 1.5rem; /* Increase padding for more space */
+}
+
+.accordion-header .accordion-button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+/* Add space inside accordion items */
+.accordion-body {
+  padding: 1.5rem; /* Add padding inside accordion body */
+}
+
+/* Optional: Increase the space between accordion items */
+.accordion-item {
+  margin-bottom: 1rem; /* Adjust the margin between items */
+}
+
+
+.accordian-title{
+  margin: 50px ;
+}
